@@ -1,29 +1,33 @@
 import mongoose from "mongoose";
 
 const houseSchema = new mongoose.Schema({
-  name:{
+  name: {
     type: String,
     required: true,
     trim: true,
   },
-  country:{
+  broker: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Brokers",
+  },
+  country: {
     type: String,
     required: true,
   },
-  neighbourhood:{
+  neighbourhood: {
     type: String,
     required: true,
   },
-  city:{
+  city: {
     type: String,
     required: true,
   },
-  street:{
+  street: {
     type: String,
-    required:true,
+    required: true,
   },
   county: {
-    type:String,
+    type: String,
     required: true,
   },
   bedrooms: {
@@ -50,24 +54,24 @@ const houseSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  types:{
+  types: {
     type: Array,
   },
-  features:{
+  features: {
     type: Array,
   },
-  displayImages:[
+  displayImages: [
     {
-      url:{
-        type:String,
+      url: {
+        type: String,
         required: true,
       },
-      public_id:{
-        type:String,
+      public_id: {
+        type: String,
         required: true,
-      }
-    }
+      },
+    },
   ],
 });
-  
-export default mongoose.model('Houses', houseSchema);
+
+export default mongoose.model("Houses", houseSchema);

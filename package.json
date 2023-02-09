@@ -5,19 +5,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev" : "nodemon server --ignore client",
+    "dev": "nodemon server --ignore client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "cloudinary": "^1.33.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-fileupload": "^1.4.0",
     "fs-extra": "^11.1.0",
     "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.9.0",
     "morgan": "^1.10.0"
   },
