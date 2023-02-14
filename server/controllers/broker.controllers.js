@@ -1,6 +1,7 @@
 import Broker from "../models/Broker.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
+import fs from "fs-extra";
 import { API_KEY, API_SECRET, CLOUD_NAME, SECRET } from "../config.js";
 import { v2 as cloudinary } from "cloudinary";
 
@@ -26,19 +27,22 @@ const deleteImage = async (id) => {
 
 export const signUpBroker = async (req, res) => {
   try {
-    const {
-      firstName,
-      lastName,
-      moreInfo,
-      education,
-      languages,
-      bio,
-      email,
-      password,
-    } = req.body;
+    const { firstName, lastName, moreInfo, languages, bio, email, password } =
+      req.body;
+    let education = [];
+    for (let key in req.body) {
+      if (key.startsWith("education")) {
+        let educationIndex = parseInt(key.split("[")[1].split("]")[0]);
+        let educationKey = key.split(".")[1];
+        if (!education[educationIndex]) {
+          education[educationIndex] = {};
+        }
+        education[educationIndex][educationKey] = req.body[key];
+      }
+    }
     let profilePic = null;
     const emailTaken = await Broker.findOne({ email });
-    if (emailTaken) return res.status(500);
+    if (emailTaken) return res.status(409);
     const salt = await bcrypt.genSalt(10);
     const hash = await bcrypt.hash(password, salt);
     if (req.files?.profilePic) {
@@ -49,12 +53,11 @@ export const signUpBroker = async (req, res) => {
         public_id: result.public_id,
       };
     } else {
-      image = {
+      profilePic = {
         url: "https://i.stack.imgur.com/l60Hf.png",
-        public_id: username,
+        public_id: firstName,
       };
     }
-
     const broker = new Broker({
       firstName,
       lastName,
@@ -68,7 +71,7 @@ export const signUpBroker = async (req, res) => {
     });
     await broker.save();
     const token = createToken(broker._id);
-    return res.status(200).json({ user: broker._id, token });
+    return res.status(200).json({ broker: broker._id, token });
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
@@ -79,15 +82,15 @@ export const signInBroker = async (req, res) => {
     const { email, password } = req.body;
 
     //Check if the broker exists
-    const brokerExists = await Broker.findOne({ email });
+    const broker = await Broker.findOne({ email });
     //if not exists send status 404
-    if (!brokerExists) return res.sendStatus(404);
+    if (!broker) return res.sendStatus(404);
     //if exists then check if password is correct
-    const match = await bcrypt.compare(password, user.password);
+    const match = await bcrypt.compare(password, broker.password);
     if (!match) return res.sendStatus(500);
     //if password is correct send data to the frontend
-    const token = createToken(user._id);
-    return res.status(200).json({ user: user._id, token });
+    const token = createToken(broker._id);
+    return res.status(200).json({ broker: broker._id, token });
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }

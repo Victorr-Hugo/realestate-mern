@@ -56,11 +56,27 @@ const FeedSection = () => {
                 className="rounded-[9px] object-cover h-[210px] w-full"
               />
               <div className="w-full flex-row flex my-1">
-                <div className="bg-neutral-100 text-neutral-500 font-medium text-[12px] rounded-full px-3 py-[2px] mx-1 my-1">
-                  House
+                <div className="bg-neutral-100 text-neutral-500 font-medium text-[12px] rounded-full px-3 py-[2px] mx-1 my-1 whitespace-nowrap text-ellipsis overflow-hidden w-1/3 max-w-[33.3%]">
+                  {listing.types &&
+                    listing.types
+                      .filter((type) => type !== null)
+                      .map(
+                        (type, index) =>
+                          index === 0 && <p key={index}>{type}</p>
+                      )}
                 </div>
                 <div className="bg-neutral-100 text-neutral-500 font-medium text-[12px] rounded-full px-3 py-[2px] mx-1 my-1">
-                  Negotiable
+                  {listing.types &&
+                    (listing.types[1] ? (
+                      listing.types
+                        .filter((type) => type !== null)
+                        .map(
+                          (type, index) =>
+                            index === 1 && <p key={index}>{type}</p>
+                        )
+                    ) : (
+                      <p>negotiable</p>
+                    ))}
                 </div>
               </div>
               <div className="text-[20px] text-left font-semibold px-2 py-1">
@@ -71,10 +87,10 @@ const FeedSection = () => {
               </div>
               <div className="flex-row flex w-full py-1">
                 <div className="bg-neutral-100 text-neutral-500 font-medium text-[12px] rounded-full px-3 py-[2px] mx-1 my-1">
-                  4 bedroom
+                  {listing.bedrooms} bedroom
                 </div>
                 <div className="bg-neutral-100 text-neutral-500 font-medium text-[12px] rounded-full px-3 py-[2px] mx-1 my-1">
-                  3 bathroom
+                  {listing.bathrooms} bathroom
                 </div>
               </div>
             </div>

@@ -17,7 +17,6 @@ const brokerSchema = new mongoose.Schema({
   languages: [],
   bio: {
     type: String,
-    required: true,
   },
   email: {
     type: String,

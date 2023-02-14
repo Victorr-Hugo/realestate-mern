@@ -1,5 +1,6 @@
 import { deleteImage, uploadImage } from "../libs/cloudinary.js";
 import House from "../models/House.js";
+import Broker from "../models/Broker.js";
 import fs from "fs-extra";
 
 export const getListings = async (req, res) => {
@@ -42,7 +43,6 @@ export const createListing = async (req, res) => {
       features_shop,
       features_house,
       features_basement,
-      broker,
     } = req.body;
 
     const displayImages = [];
@@ -62,7 +62,6 @@ export const createListing = async (req, res) => {
     const newHouse = new House({
       name,
       country,
-      broker,
       neighbourhood,
       city,
       street,
@@ -141,9 +140,7 @@ export const updateListing = async (req, res) => {
 
 export const getHomeFeed = async (req, res) => {
   try {
-    const count = await House.countDocuments();
-    const randomSkip = Math.floor(Math.random() * count);
-    const listings = await House.find({}).skip(randomSkip).limit(8);
+    const listings = await House.aggregate([{ $sample: { size: 8 } }]);
     return res.json(listings);
   } catch (error) {
     return res.status(500).json({ message: error.message });

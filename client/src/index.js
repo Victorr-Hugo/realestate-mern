@@ -5,14 +5,20 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { ListingProvider } from "./context/listingContext";
+import { BrokerProvider } from "./context/brokerContext";
+import { BlogProvider } from "./context/blogContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ListingProvider>
-        <App />
-      </ListingProvider>
+      <BrokerProvider>
+        <ListingProvider>
+          <BlogProvider>
+            <App />
+          </BlogProvider>
+        </ListingProvider>
+      </BrokerProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

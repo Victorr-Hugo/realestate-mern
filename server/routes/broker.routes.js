@@ -12,7 +12,7 @@ const router = Router();
 
 router.get("/brokers", getBrokers);
 router.get("/brokers/:id", getBroker);
-router.post("/brokers", signUpBroker);
+router.post("/brokers/signup", signUpBroker);
 router.post("/brokers/signin", signInBroker);
 router.put("/brokers/:id", updateBroker);
 router.delete("/brokers/:id", deleteBroker);

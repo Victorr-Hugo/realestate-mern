@@ -1,7 +1,16 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import { HomePage, CreatePage, ListingsPage, ListingPage } from "./pages/index";
+import {
+  HomePage,
+  CreatePage,
+  ListingsPage,
+  ListingPage,
+  Signin,
+  MyBrokerPage,
+  BlogPage,
+  PostPage,
+} from "./pages/index";
 import "./App.css";
 
 function App() {
@@ -16,6 +25,10 @@ function App() {
               <Route path="/create" element={<CreatePage />} />
               <Route path="/properties" element={<ListingsPage />} />
               <Route path="/properties/:id" element={<ListingPage />} />
+              <Route path="/login" element={<Signin />} />
+              <Route path="/mybroker" element={<MyBrokerPage />} />
+              <Route path="/tools" element={<BlogPage />} />
+              <Route path="/blog/:id" element={<PostPage />} />
             </Routes>
           </div>
         </div>

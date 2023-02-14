@@ -42,10 +42,7 @@ const Footer = () => {
                 in a career with us? We may have the perfect job for you.
               </div>
               <div>
-                <a
-                  href="https://www.linkedin.com/in/victor-hugo-303324141/"
-                  className="underline text-lime-600"
-                >
+                <a href="/login" className="underline text-lime-600">
                   See all available positions
                 </a>
               </div>
