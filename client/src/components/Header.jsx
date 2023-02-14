@@ -18,13 +18,22 @@ const Header = () => {
           </a>
           <div className="w-full h-full relative">
             <div className="absolute hidden right-0 top-1/4 justify-center items-center flex-row md:flex font-medium text-[1rem]">
-              <div onClick={() => navigate("/properties")} className="mx-4">
+              <div
+                onClick={() => navigate("/properties")}
+                className="mx-4 cursor-pointer"
+              >
                 Search
               </div>
-              <div onClick={() => navigate("/create")} className="mx-4">
+              <div
+                onClick={() => navigate("/create")}
+                className="mx-4 cursor-pointer"
+              >
                 Sell
               </div>
-              <div onClick={() => navigate("/tools")} className="mx-4">
+              <div
+                onClick={() => navigate("/tools")}
+                className="mx-4 cursor-pointer"
+              >
                 Tools
               </div>
               {brokerId ? null : (

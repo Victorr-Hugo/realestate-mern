@@ -46,7 +46,7 @@ const Footer = () => {
               <div>
                 <div
                   onClick={() => navigate("/login")}
-                  className="underline text-lime-600"
+                  className="underline text-lime-600 cursor-pointer"
                 >
                   See all available positions
                 </div>
