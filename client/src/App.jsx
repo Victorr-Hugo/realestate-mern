@@ -12,8 +12,10 @@ import {
   PostPage,
 } from "./pages/index";
 import "./App.css";
-
+import { useBrokers } from "./context/brokerContext";
 function App() {
+  const { brokerId } = useBrokers();
+
   return (
     <div className="App">
       <div className="h-full">
@@ -22,7 +24,10 @@ function App() {
           <div className="w-full h-full pt-[66px] ">
             <Routes>
               <Route path="/" element={<HomePage />} />
-              <Route path="/create" element={<CreatePage />} />
+              <Route
+                path="/create"
+                element={brokerId ? <CreatePage /> : <Signin />}
+              />
               <Route path="/properties" element={<ListingsPage />} />
               <Route path="/properties/:id" element={<ListingPage />} />
               <Route path="/login" element={<Signin />} />
