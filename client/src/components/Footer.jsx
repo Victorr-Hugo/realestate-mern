@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import logo from "../resources/logo.png";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="w-full">
       <div className="bg-slate-100 w-full p-10 text-left">
@@ -42,9 +44,12 @@ const Footer = () => {
                 in a career with us? We may have the perfect job for you.
               </div>
               <div>
-                <a href="/login" className="underline text-lime-600">
+                <div
+                  onClick={() => navigate("/login")}
+                  className="underline text-lime-600"
+                >
                   See all available positions
-                </a>
+                </div>
               </div>
             </div>
           </div>

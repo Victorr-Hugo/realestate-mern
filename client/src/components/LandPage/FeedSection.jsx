@@ -24,9 +24,12 @@ const FeedSection = () => {
         </div>
         <div className="w-1/2 relative">
           <div className="flex-row flex absolute right-0 top-0 hover:underline cursor-pointer">
-            <a href="/properties" className="my-auto px-2">
+            <div
+              onClick={() => navigate("/properties")}
+              className="my-auto px-2"
+            >
               Explore All Properties
-            </a>
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               id="Isolation_Mode"

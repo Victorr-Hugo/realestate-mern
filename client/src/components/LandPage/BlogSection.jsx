@@ -17,9 +17,9 @@ const BlogSection = () => {
         </div>
         <div className="w-1/2 relative">
           <div className="flex-row flex my-auto h-full absolute right-0 top-0 hover:underline cursor-pointer">
-            <a href="/blogs" className="my-auto px-2">
+            <div onClick={() => navigate("/login")} className="my-auto px-2">
               Explore All Blogs
-            </a>
+            </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               id="Isolation_Mode"
