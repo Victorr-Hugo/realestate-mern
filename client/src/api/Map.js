@@ -1,10 +1,11 @@
 import axios from "axios";
 
-export const getListingsRequest = async () => await axios.get("/api/houses");
+export const getListingsRequest = async () =>
+  await axios.get("https://realestate-mern.onrender.com/api/houses");
 export const getHousesFeedRequest = async () =>
-  await axios.get("/api/houses/feed");
+  await axios.get("https://realestate-mern.onrender.com/api/houses/feed");
 export const getListingRequest = async (id) =>
-  await axios.get("/api/houses/" + id);
+  await axios.get("https://realestate-mern.onrender.com/api/houses/" + id);
 
 export const searchForLocation = async (location) => {
   try {
