@@ -48,11 +48,15 @@ export const createListingRequest = async (values) => {
     for (let key in values) {
       form.append(key, values[key]);
     }
-    return await axios.post("/api/houses", form, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    });
+    return await axios.post(
+      "https://realestate-mern.onrender.com/api/houses",
+      form,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      }
+    );
   } catch (error) {
     console.error(error);
   }
@@ -64,11 +68,15 @@ export const getQueryResultsRequest = async (values) => {
     for (let key in values) {
       form.append(key, values[key]);
     }
-    return await axios.post("/api/houses/query", form, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    });
+    return await axios.post(
+      "https://realestate-mern.onrender.com/api/houses/query",
+      form,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      }
+    );
   } catch (error) {
     console.error(error);
   }
