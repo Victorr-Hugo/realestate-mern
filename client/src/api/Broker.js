@@ -1,6 +1,9 @@
 import axios from "axios";
 
-export const getBrokersRequest = async () => await axios.get("/api/brokers");
+export const getBrokersRequest = async () =>
+  await axios.get(
+    "https://realestate-mern.onrender.com/api/brokers/api/brokers"
+  );
 export const getBrokerRequest = async (id) =>
   await axios.get("https://realestate-mern.onrender.com/api/brokers/" + id);
 
