@@ -4,9 +4,14 @@ import fileUpload from "express-fileupload";
 import houseRoutes from "./routes/house.routes.js";
 import brokerRoutes from "./routes/broker.routes.js";
 import postRoutes from "./routes/post.routes.js";
+import cors from "cors";
 
 const app = express();
-
+const corsOptions = {
+  origin: "https://realestate-client-iwhl.onrender.com",
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
