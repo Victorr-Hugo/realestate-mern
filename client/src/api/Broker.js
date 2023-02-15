@@ -1,8 +1,9 @@
 import axios from "axios";
 
-export const getBrokersRequest = async () => await axios.get("/api/brokers");
+export const getBrokersRequest = async () =>
+  await axios.get("https://realestate-mern.onrender.com/api/brokers");
 export const getBrokerRequest = async (id) =>
-  await axios.get("/api/brokers/" + id);
+  await axios.get("https://realestate-mern.onrender.com/api/brokers/" + id);
 
 export const signupBrokerRequest = async (values) => {
   try {
@@ -21,11 +22,15 @@ export const signupBrokerRequest = async (values) => {
         form.append(key, values[key]);
       }
     }
-    return await axios.post("/api/brokers/signup", form, {
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-    });
+    return await axios.post(
+      "https://realestate-mern.onrender.com/api/brokers/signup",
+      form,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      }
+    );
   } catch (error) {
     console.error(error);
   }
@@ -36,9 +41,13 @@ export const signinBrokerRequest = async (broker) => {
   for (let key in broker) {
     form.append(key, broker[key]);
   }
-  return await axios.post("/api/brokers/signin", form, {
-    headers: {
-      "Content-Type": "multipart/form-data",
-    },
-  });
+  return await axios.post(
+    "https://realestate-mern.onrender.com/api/brokers/signin",
+    form,
+    {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    }
+  );
 };
