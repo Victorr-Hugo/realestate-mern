@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="w-full">
       <div className="bg-slate-100 w-full p-10 text-left">
-        <div className="flex-row flex w-full">
-          <div className="w-1/3 px-10">
+        <div className="flex-row md:flex w-full">
+          <div className="md:w-1/3 md:px-10">
             <div className="w-full h-full">
               <div className="text-[1.17rem] leading-[1.2] font-semibold">
                 Discover REALESTATE
@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3 px-10">
+          <div className="md:w-1/3 py-10 md:py-0 md:px-10">
             <div className="w-full h-full">
               <div className="text-[1.17rem] text-lime-600 leading-[1.2] font-semibold">
                 Join our team
@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/3 px-10">
+          <div className="md:w-1/3 py-10 md:py-0 md:px-10">
             <div className="w-full h-full">
               <div className="text-[1.17rem] leading-[1.2] font-semibold">
                 Contact REALESTATE

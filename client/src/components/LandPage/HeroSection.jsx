@@ -8,16 +8,16 @@ const HeroSection = () => {
     <div className="w-full relative">
       <div className="absolute w-full md:w-fit top-1/2 md:left-1/2 md:-translate-x-1/2">
         <div>
-          <div className="text-white text-[32px] font-medium">
+          <div className="text-white md:text-[32px] text-[22px] font-medium">
             Discover a place you will love to live
           </div>
         </div>
-        <div className="flex-col flex h-full md:px-0 px-4">
+        <div className="flex-col flex h-full px-4 ">
           <div
             onClick={() => navigate("/properties")}
-            className="cursor-pointer ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300 flex-row relative flex rounded-[9px] bg-white md:w-[960px] py-1"
+            className="cursor-pointer ease-in-out delay-150 hover:translate-y-1 w-full hover:scale-110 duration-300 flex-row relative flex rounded-[9px] bg-white lg:w-[960px] md:w-[660px] py-1"
           >
-            <div className="w-full grid grid-cols-3 md:grid-cols-4 m-auto">
+            <div className="w-full grid sm:grid-cols-3 md:grid-cols-4 m-auto">
               <div className="flex-row flex w-full px-5">
                 <div className="my-auto px-4">
                   <div className="bg-[#65a30d]/20 rounded-full p-2">
@@ -35,12 +35,14 @@ const HeroSection = () => {
                     </svg>
                   </div>
                 </div>
-                <div className="flex-col flex text-left">
-                  <div className="font-medium">Search city</div>
-                  <div className="text-[12px] text-neutral-700">Location</div>
+                <div className="sm:flex-col flex-row flex text-left">
+                  <div className="font-medium my-auto">Search city</div>
+                  <div className="text-[12px] text-neutral-700 px-3 sm:px-0 my-auto">
+                    Location
+                  </div>
                 </div>
               </div>
-              <div className="flex-row flex w-full px-5">
+              <div className="flex-row  sm:flex hidden w-full px-5">
                 <div className="my-auto px-4">
                   <div className="bg-[#65a30d]/20 rounded-full p-2">
                     <svg
@@ -64,7 +66,7 @@ const HeroSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex-row flex w-full px-5">
+              <div className="flex-row hidden sm:flex w-full px-5">
                 <div className="my-auto px-4">
                   <div className="bg-[#65a30d]/20 rounded-full p-2">
                     <svg

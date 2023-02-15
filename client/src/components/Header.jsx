@@ -60,23 +60,6 @@ const Header = () => {
                 </div>
               )}
             </div>
-            <div className="md:w-0 md:hidden absolute right-0 h-full justify-center items-center">
-              <div className="my-auto h-full">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  id="Isolation_Mode"
-                  data-name="Isolation Mode"
-                  viewBox="0 0 24 24"
-                  width="34"
-                  height="34"
-                  className="block m-auto h-full"
-                >
-                  <rect y="10.5" width="24" height="3"></rect>
-                  <rect y="3.5" width="24" height="3"></rect>
-                  <rect y="17.5" width="24" height="3"></rect>
-                </svg>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -18,11 +18,11 @@ const FeedSection = () => {
       <div className="text-left text-[18px] text-lime-700 font-medium py-2">
         PROPERTY
       </div>
-      <div className="w-full flex-row flex">
+      <div className="w-full flex-row sm:flex">
         <div className="text-left font-extrabold text-[32px]">
           Property in Cities and Provinces
         </div>
-        <div className="w-1/2 relative">
+        <div className="sm:w-1/2 relative">
           <div className="flex-row flex absolute right-0 top-0 hover:underline cursor-pointer">
             <div
               onClick={() => navigate("/properties")}
@@ -46,7 +46,7 @@ const FeedSection = () => {
         </div>
       </div>
       <div className="py-20 w-full">
-        <div className="w-full md:grid-cols-4 grid-cols-2 grid gap-6">
+        <div className="w-full md:grid-cols-4 sm:grid-cols-2 grid-cols-1 grid gap-6">
           {feed.map((listing) => (
             <div
               onClick={() => navigate("/properties/" + listing._id)}

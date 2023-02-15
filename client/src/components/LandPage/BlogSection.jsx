@@ -7,15 +7,15 @@ const BlogSection = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="py-20 text-left px-20 w-full">
+    <div className="py-20 text-left sm:px-10 md::px-20 px-3 w-full">
       <div className="font-medium pb-8">BLOGS</div>
-      <div className="w-full flex-row flex">
-        <div className="w-1/2 pr-[230px]">
+      <div className="w-full flex-row md:flex">
+        <div className="md:w-1/2 md:pr-[230px]">
           <div className="text-[28px] font-bold">
             Articles Related to Aesthetic Home Design
           </div>
         </div>
-        <div className="w-1/2 relative">
+        <div className="md:w-1/2 relative">
           <div className="flex-row flex my-auto h-full absolute right-0 top-0 hover:underline cursor-pointer">
             <div onClick={() => navigate("/login")} className="my-auto px-2">
               Explore All Blogs
@@ -35,8 +35,8 @@ const BlogSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex-row flex w-full py-14">
-        <div className="w-1/2 pr-10">
+      <div className="flex-row md:flex w-full py-14">
+        <div className="md:w-1/2 md:pr-10">
           <div
             onClick={() => navigate("/blog/" + landPagePosts?.[0]?._id)}
             className="w-full cursor-pointer"
@@ -57,7 +57,7 @@ const BlogSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 pl-10">
+        <div className="md:w-1/2 md:pl-10">
           <div className="flex-col flex w-full ">
             <div
               onClick={() => navigate("/blog/" + landPagePosts?.[1]._id)}

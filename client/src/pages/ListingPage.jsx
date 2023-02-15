@@ -20,15 +20,15 @@ export const ListingPage = () => {
   }, [params.id, getListing]);
 
   return (
-    <div className="w-full px-10 pt-10">
+    <div className="w-full md:px-10 pt-10">
       <div className="shadow-md drop-shadow-xl w-full text-left">
-        <div className="flex-row flex p-3 w-full">
-          <div className="flex-col flex w-1/2">
+        <div className="flex-row flex md:p-3 w-full">
+          <div className="flex-col md:flex w-1/2">
             <div className="text-[18px] font-extrabold">House for Sale</div>
             <div className="text-[15px]">{listing?.name}</div>
           </div>
           <div className="w-1/2 ">
-            <div className="w-full flex-row flex h-full">
+            <div className="w-full flex-row md:flex h-full">
               <div className="w-1/3 px-4 border-r text-[22px] font-extrabold">
                 ${new Intl.NumberFormat().format(listing?.price)}
               </div>
@@ -45,15 +45,15 @@ export const ListingPage = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex-row flex">
-          <div className="w-1/2 mr-[2px]">
+        <div className="w-full flex-row md:flex">
+          <div className="md:w-1/2 mr-[2px]">
             <img
               alt=""
               src={listing?.displayImages?.[0].url}
               className="w-full h-full"
             />
           </div>
-          <div className="w-1/2 ml-[2px]">
+          <div className="md:w-1/2 ml-[2px]">
             <div className="w-full grid grid-cols-2 gap-1">
               <img
                 alt=""
@@ -125,7 +125,7 @@ export const ListingPage = () => {
           <div className="text-[1.25rem] leading-[1.2] font-medium">
             Features
           </div>
-          <div className="flex-row flex w-full py-4">
+          <div className="flex-row md:flex w-full py-4">
             <div className="flex-row mr-2 flex w-1/4 rounded-[6px] p-1">
               <div className="border rounded-full p-2 cursor-pointer">
                 <svg
@@ -142,7 +142,7 @@ export const ListingPage = () => {
                 Lifestyle
               </div>
             </div>
-            <div className="flex-row mr-2 flex w-1/4 rounded-[6px] p-1">
+            <div className="flex-row mr-2 flex md:w-1/4 rounded-[6px] p-1">
               <div className="rounded-full p-2 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +158,7 @@ export const ListingPage = () => {
                 {listing.bedrooms + listing.bathrooms} Rooms
               </div>
             </div>
-            <div className="flex-row mr-2 flex w-1/4 rounded-[6px] p-1">
+            <div className="flex-row mr-2 flex md:w-1/4  rounded-[6px] p-1">
               <div className="rounded-full p-2 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +174,7 @@ export const ListingPage = () => {
                 {listing.bedrooms} Beedrooms
               </div>
             </div>
-            <div className="flex-row mr-2 flex w-1/4 rounded-[6px] p-1">
+            <div className="flex-row mr-2 flex md:w-1/4  rounded-[6px] p-1">
               <div className="rounded-full p-2 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -191,8 +191,8 @@ export const ListingPage = () => {
               </div>
             </div>
           </div>
-          <div className="w-full py-4 flex-row flex">
-            <div className="w-1/2">
+          <div className="w-full py-4 flex-row md:flex">
+            <div className="md:w-1/2 md:px-0 px-3 text-justify md:text-left">
               <div className="w-full">
                 <div className="text-[1.25rem] leading-[1.2] font-medium">
                   Description
@@ -202,7 +202,7 @@ export const ListingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 ml-4">
+            <div className="md:w-1/2 md:ml-4">
               <div className="w-full h-full">
                 <div className="bg-lime-700/50 p-2 h-full text-left px-4">
                   <div className="text-[1.25rem] leading-[1.2] font-medium py-4">

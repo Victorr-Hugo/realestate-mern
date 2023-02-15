@@ -41,7 +41,7 @@ const ListingLocation = ({ listing }) => {
   return (
     <div className="w-full pt-10">
       <div className="w-full h-[321px] overflow-auto relative">
-        <div className="absolute left-0 h-full px-2 bg-slate-100 z-[9999]  overflow-auto ">
+        <div className=" hidden md:block md:absolute left-0 h-full px-2 bg-slate-100 z-[9999]  overflow-auto ">
           {listing.features?.map((feature, e) => {
             if (feature !== null) {
               return (

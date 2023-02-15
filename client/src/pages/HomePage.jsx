@@ -10,8 +10,8 @@ export const HomePage = () => {
       <HeroSection />
       <div className="w-full ">
         <div className="w-full">
-          <div className="flex-row md:px-20 px-10 flex w-full pt-20">
-            <div className="flex-col flex w-2/5 md:w-2/3 text-left break-words">
+          <div className="sm:flex-row flex-col md:px-20 px-10 flex w-full pt-20">
+            <div className="flex-col flex w-full sm:w-2/5 md:w-2/3 text-left break-words">
               <div className="text-lime-600 pb-3 font-medium ">
                 WHY CHOOSE REALESTATE
               </div>
@@ -19,14 +19,14 @@ export const HomePage = () => {
                 Provides the most complete list of property
               </div>
             </div>
-            <div className="md:w-1/3 w-3/5 my-auto text-justify text-neutral-700 px-6">
+            <div className="md:w-1/3 sm:w-3/5 my-auto text-justify text-neutral-700 sm:px-6">
               Find the ideal property that is most suitable for you. Starting
               from houses for sale that are minimalist, apartments for sale that
               are exclusive.
             </div>
           </div>
           <div className="py-[68px] w-full md:px-20">
-            <div className="w-full grid-cols-3 grid gap-10">
+            <div className="w-full sm:grid-cols-3 grid gap-10">
               <div className="hover:shadow-md rounded-[9px] text-left md:text-justify px-10 py-10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

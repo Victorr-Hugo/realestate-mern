@@ -93,7 +93,7 @@ export const ListingsPage = () => {
 
   return (
     <div className="w-full h-full relative">
-      <div className="absolute h-full z-[9999] flex-row flex">
+      <div className="absolute h-full z-[9999] flex-row hidden sm:flex">
         <div className="h-full w-[321px] p-3 bg-white border-t text-left">
           <div className="font-semibold text-[16px]">Filter</div>
           <Formik
@@ -138,7 +138,7 @@ export const ListingsPage = () => {
             {({ setFieldValue, isSubmitting, handleSubmit, values }) => (
               <Form
                 onSubmit={handleSubmit}
-                className="px-3 text-left py-2 overflow-auto w-full h-full"
+                className="px-3 text-left py-2 overflow-auto w-full h-full sm:block hidden"
               >
                 <div className="w-full flex-row flex">
                   <div className="flex-col flex w-full pr-2">
