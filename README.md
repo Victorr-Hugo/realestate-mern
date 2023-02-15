@@ -4,7 +4,7 @@ The project is live in: [Real estate](https://realestate-client-iwhl.onrender.co
 It may take a few seconds to load the data from the database, be patient, it's a bit slow (it's free hosting)
 
 ## About the Project
-This real estate page was created as a personal project to demonstrate my skills with the MERN stack and various technologies such as Tailwind, Axios, Formik, and Leaflet. It was built to showcase real estate listings with details such as images, descriptions, and maps to show the location of each property.
+This real estate web App with the MERN stack and various technologies such as Tailwind, Axios, Formik, and Leaflet. It was built to showcase real estate listings with details such as images, descriptions, and maps to show the location of each property.
 
 ## Tech Stack
 - Frontend:
