@@ -1,6 +1,6 @@
 # Real Estate Page
 A real estate web application made with the MERN stack
-The project is live in: [Real estate]([https://www.linkedin.com/in/victor-hugo-303324141/](https://realestate-client-iwhl.onrender.com/)).
+The project is live in: [Real estate]([https://www.linkedin.com/in/victor-hugo-303324141/](https://realestate-client-iwhl.onrender.com/).
 
 ## About the Project
 This real estate page was created as a personal project to demonstrate my skills with the MERN stack and various technologies such as Tailwind, Axios, Formik, and Leaflet. It was built to showcase real estate listings with details such as images, descriptions, and maps to show the location of each property.
