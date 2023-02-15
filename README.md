@@ -21,7 +21,7 @@ To run this project, you will need to set up the following environment variables
 If you have any questions or would like to connect, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/victor-hugo-303324141/).
 
 ## Screen Shots
-![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-23-40.png)
+![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/screencapture-localhost-3000-2023-02-09-02_14_10.png)
 ![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-24-09.png)
 ![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-24-15.png)
 ![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-24-20.png)
