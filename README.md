@@ -1,5 +1,6 @@
 # Real Estate Page
 A real estate web application made with the MERN stack
+The project is live in:[Real estate]([https://www.linkedin.com/in/victor-hugo-303324141/](https://realestate-client-iwhl.onrender.com/)).
 
 ## About the Project
 This real estate page was created as a personal project to demonstrate my skills with the MERN stack and various technologies such as Tailwind, Axios, Formik, and Leaflet. It was built to showcase real estate listings with details such as images, descriptions, and maps to show the location of each property.
@@ -22,9 +23,6 @@ If you have any questions or would like to connect, feel free to reach out to me
 
 ## Screen Shots
 ![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/screencapture-localhost-3000-2023-02-09-02_14_10.png)
-![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-24-09.png)
-![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-24-15.png)
-![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-24-20.png)
-![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-24-51.png)
-![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-25-14.png)
-![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-07%2012-25-26.png)
+![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-09%2002-15-47.png)
+![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-09%2002-16-20.png)
+![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/screencapture-localhost-3000-properties-63e202b76234aa6c91c4a96e-2023-02-09-02_18_02.png)
