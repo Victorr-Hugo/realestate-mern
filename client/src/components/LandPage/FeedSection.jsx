@@ -14,14 +14,16 @@ const FeedSection = () => {
   }, []);
 
   return (
-    <div className="w-full bg-slate-100 py-14 md:px-20 px-10">
+    <div className="py-20 text-left sm:px-10 md::px-20 px-3 w-full">
       <div className="text-left text-[18px] text-lime-700 font-medium py-2">
         PROPERTY
       </div>
-      <div className="md:w-1/2 flex-row sm:flex">
-        <div className="text-left font-extrabold text-[32px]">
+      <div className="w-full flex-row md:flex">
+        <div className="md:w-1/2 md:pr-[230px]">
+                <div className="text-[28px] font-bold">
           Property in Cities and Provinces
         </div>
+    </div>
         <div className="md:w-1/2 relative">
          <div className="flex-row flex my-auto h-full absolute right-0 top-0 hover:underline cursor-pointer">
             <div
