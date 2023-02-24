@@ -14,7 +14,7 @@ const FeedSection = () => {
   }, []);
 
   return (
-    <div className="py-20 text-left sm:px-10 md::px-20 px-3 w-full">
+    <div className="py-20 text-left sm:px-10 md::px-20 px-3 w-full bg-slate-100">
       <div className="text-left text-[18px] text-lime-700 font-medium py-2">
         PROPERTY
       </div>
