@@ -24,7 +24,7 @@ If you have any questions or would like to connect, feel free to reach out to me
 
 ## Screen Shots
 ![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Lighthouse.png)
-![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/screencapture-realestate-client-iwhl-onrender-2023-02-14-20_50_21.png)
+![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/screencapture-localhost-3000-2023-02-09-02_14_10.png)
 ![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-09%2002-15-47.png)
 ![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/Captura%20de%20pantalla%20de%202023-02-09%2002-16-20.png)
 ![Homepage screenshot](https://raw.githubusercontent.com/Victorr-Hugo/realestate-mern/main/showcase/screencapture-localhost-3000-properties-63e202b76234aa6c91c4a96e-2023-02-09-02_18_02.png)
