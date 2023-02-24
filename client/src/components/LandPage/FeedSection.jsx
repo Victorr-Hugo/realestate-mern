@@ -23,11 +23,10 @@ const FeedSection = () => {
           Property in Cities and Provinces
         </div>
         <div className="md:w-1/2 relative">
-          <div className="flex-row flex absolute right-0 top-0 hover:underline cursor-pointer">
+         <div className="flex-row flex my-auto h-full absolute right-0 top-0 hover:underline cursor-pointer">
             <div
               onClick={() => navigate("/properties")}
-              className="my-auto px-2"
-            >
+              className="my-auto px-2">
               Explore All Properties
             </div>
             <svg
