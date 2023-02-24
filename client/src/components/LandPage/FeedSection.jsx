@@ -18,11 +18,11 @@ const FeedSection = () => {
       <div className="text-left text-[18px] text-lime-700 font-medium py-2">
         PROPERTY
       </div>
-      <div className="w-full flex-row sm:flex">
+      <div className="md:w-1/2 flex-row sm:flex">
         <div className="text-left font-extrabold text-[32px]">
           Property in Cities and Provinces
         </div>
-        <div className="sm:w-1/2 relative">
+        <div className="md:w-1/2 relative">
           <div className="flex-row flex absolute right-0 top-0 hover:underline cursor-pointer">
             <div
               onClick={() => navigate("/properties")}
